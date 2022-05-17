@@ -1,0 +1,73 @@
+/* COMMON */
+.body {
+  font-size: 16px; 
+}
+.inner {
+  width: 1140px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  width: 1440px;
+  height: 70px;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.09);
+
+  display: 
+}
+.header > .inner {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.header > .inner .logo img {
+  height: 70px;
+}
+.header .inner .downloadBox {
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #c57bf5;
+  transition: 1s;
+  cursor: pointer;
+}
+.header .inner .downloadBox:hover {
+  background-color: #957ADA;
+}
+.header .inner .downloadBox a {
+  color: white;
+  margin: 0 15px;
+  font-size: 12px;
+}
+
+/* MAIN */
+.main {
+  padding-top: 70px;
+}
+.main > .inner {
+  height: 912px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.main > .inner .textBox {
+  margin-top: 100px;
+
+}
+.main > .inner .textBox span {
+  color: #c57bf5;
+}
+.main > .inner .textBox span b {
+  font-weight: 700;
+}
+.main > .inner .textBox h1 {
+
+}
