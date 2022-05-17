@@ -3,7 +3,7 @@
   font-size: 16px; 
 }
 .inner {
-  width: 1140px;
+  width: 90%;
   font-family: 'Roboto', sans-serif;
   margin: auto;
 }
@@ -30,7 +30,7 @@ b {
 /* HEADER */
 .header {
   position: fixed;
-  width: 1440px;
+  width: 100%;
   height: 70px;
   background-color: #fff;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.09);
@@ -41,6 +41,13 @@ b {
   justify-content: space-between;
   align-items: center;
 }
+.header > .inner > .material-icons {
+  display: none;
+}
+.header > .inner > .download__box {
+  display: none;
+}
+
 .header > .inner .logo img {
   height: 70px;
 }
@@ -52,11 +59,10 @@ b {
 
 /* MAIN */
 .main {
-  padding-top: 70px;
+  padding-top: 30px;
   background-color: #f6f8f9;
 }
 .main > .inner {
-  height: 912px;
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
@@ -90,6 +96,9 @@ b {
 .main > .inner .textBox > .btn {
   width: 120px;
 }
+.main > .inner .textBox > .btn a {
+  color: #fff
+}
 
 /* FOOTER */
 .footer {
@@ -118,6 +127,10 @@ b {
 padding: 8px 0;
 font-size: 12px;
 color: #c57bf5;
+transition: 1s;
+display: block;
+width: max-content
+
 }
 .Box .aTag a:nth-child(3) {
   margin-bottom: 30px;
@@ -134,4 +147,90 @@ color: #c57bf5;
 }
 .footer .container .copyright a {
   color:  #c57bf5;
+  transition: 1s;
+}
+.footer .container .copyright a:hover {
+  color: #0095f7;
+}
+
+@media screen and (max-width: 768px) {
+  /* HEADER */
+  body {
+    overflow-x: hidden;
+  }
+  .header {
+    position: fixed; 
+  }
+  .header > .inner .download__box {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    top: 70px;
+    width: 90%;
+    height: 50px;
+    background-color: #fff;
+  }
+  .header > .inner .download__box > .material-icons {
+    font-size: 20px;
+    color: #62656a;
+  }
+  .header > .inner .download__box.hide {
+    display: flex;
+  }
+  .header > .inner .download__box .download {
+    margin-left: 10px;
+  }
+  .header > .inner .download__box .download a {
+    color: #0095f7;
+  }
+  .header > .inner > .material-icons {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .header .logo img {
+    position: absolute;
+    left: 50%;
+    margin-left: calc(224.65px / -2);
+  }
+
+  .header .btn {
+    display: none;
+  }
+  /* MAIN */
+
+  .main .inner {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 130px;
+  }
+  .main .inner .textBox h1 {
+    font-size: 34px;
+  }
+  .main .inner .textBox p {
+    font-size: 20px;
+  }
+
+  /* FOOTER */
+  .footer {
+    width: 100%;
+  }
+  .footer .container {
+    margin-left: 5%;
+  }
+  .footer .container .copyright {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .Box li:nth-child(2) {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
 }
