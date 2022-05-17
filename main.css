@@ -4,10 +4,28 @@
 }
 .inner {
   width: 1140px;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
 }
 a {
   text-decoration: none;
+  color: #fff;
+}
+b {
+  font-weight: 700;
+}
+.btn {
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #c57bf5;
+  transition: 1s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #957ADA;
 }
 
 /* HEADER */
@@ -17,8 +35,6 @@ a {
   height: 70px;
   background-color: #fff;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.09);
-
-  display: 
 }
 .header > .inner {
   display: flex;
@@ -29,20 +45,7 @@ a {
 .header > .inner .logo img {
   height: 70px;
 }
-.header .inner .downloadBox {
-  height: 38px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background-color: #c57bf5;
-  transition: 1s;
-  cursor: pointer;
-}
-.header .inner .downloadBox:hover {
-  background-color: #957ADA;
-}
-.header .inner .downloadBox a {
+.header .inner .btn a {
   color: white;
   margin: 0 15px;
   font-size: 12px;
@@ -56,18 +59,35 @@ a {
   height: 912px;
   display: flex;
   justify-content: space-between;
+  padding-top: 50px;
   
 }
 .main > .inner .textBox {
   margin-top: 100px;
-
+  padding-top: 50px;
 }
 .main > .inner .textBox span {
   color: #c57bf5;
-}
-.main > .inner .textBox span b {
-  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
 }
 .main > .inner .textBox h1 {
-
+  font-size: 50px;
+  color: #3a3f52;
+  font-weight: 100;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  display: block;
 }
+.main > .inner .textBox p {
+  font-size: 24px;
+  color: #8DA2B5;
+  line-height: 36px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  display: block;
+}
+.main > .inner .textBox > .btn {
+  width: 120px;
+}
+
