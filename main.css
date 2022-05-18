@@ -117,6 +117,7 @@ b {
   color: #62656a;
   font-size: 12px;
   margin-bottom: 20px;
+  line-height: 1.4;
 }
 .Box .aTag {
   display: flex;
@@ -153,6 +154,10 @@ width: max-content
   color: #0095f7;
 }
 
+
+
+
+/* REACT */
 @media screen and (max-width: 768px) {
   /* HEADER */
   body {

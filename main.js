@@ -11,3 +11,20 @@ icon.addEventListener('click', function () {
     downloadBox.classList.remove('hide')
   }
 })
+
+
+
+
+
+
+const btnBox = document.querySelectorAll('.btn')
+
+for (let Box of btnBox) {
+  Box.addEventListener('click', go);
+}
+
+const downLink = document.querySelector('.download a');
+
+function go () {
+  downLink.click();
+}
